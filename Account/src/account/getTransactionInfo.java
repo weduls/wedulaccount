@@ -28,7 +28,7 @@ public class getTransactionInfo {
 					StringTokenizer st = new StringTokenizer(Object, "~");
 					i=0;
 					while(st.hasMoreTokens()){
-						valueRow.put(qbview.columns.get(i), st.nextToken());
+						valueRow.put(qbview.columns[i], st.nextToken());
 						i++;
 					}
 					qbview.values.add(valueRow);
@@ -70,7 +70,7 @@ public class getTransactionInfo {
 						if (CheckStingtokenizer(str, Copy_st)) {
 							i = 0;
 							while (st.hasMoreTokens()) {
-								valueRow.put(qbview.columns.get(i),	st.nextToken());
+								valueRow.put(qbview.columns[i],	st.nextToken());
 								i++;
 							}
 							qbview.values.add(valueRow);
@@ -99,7 +99,7 @@ public class getTransactionInfo {
 					StringTokenizer st = new StringTokenizer(Object, "~");
 					i=0;
 					while(st.hasMoreTokens()){
-						valueRow.put(qbview.columns.get(i), st.nextToken());
+						valueRow.put(qbview.columns[i], st.nextToken());
 						i++;
 					}
 					qbview.values.add(valueRow);

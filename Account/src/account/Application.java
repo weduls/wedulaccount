@@ -25,7 +25,7 @@ public class Application implements IApplication {
 	 * @see org.eclipse.equinox.app.IApplication#start(org.eclipse.equinox.app.IApplicationContext)
 	 */
 	public static final String PLUGIN_ID = "Account";
-	public static URL url = InternalPlatform.getDefault().getInstallLocation().getURL();
+	public static final URL url = InternalPlatform.getDefault().getInstallLocation().getURL();
 	public static File workspace;
 	public static File Content;
 	public static File TreeViewerRoot;
@@ -36,6 +36,7 @@ public class Application implements IApplication {
 	public static String Object;
 	FileWriter fw;
 	
+
 	public Object start(IApplicationContext context) throws Exception {
 		CreateWorkSpace();
 
@@ -70,15 +71,6 @@ public class Application implements IApplication {
 	
 	public void CreateWorkSpace(){
 		
-		qbview.columns.add("날짜");
-		qbview.columns.add("지출 내역");
-		qbview.columns.add("결제 항목(대분류)");
-		qbview.columns.add("결제 항목(소분류)");
-		qbview.columns.add("금액");
-		qbview.columns.add("수익/지출");
-		qbview.columns.add("잔액");
-		qbview.columns.add("내용");
-		
 		//workspace 폴더 생성
 		workspace = new File(url.toString().substring(6, url.toString().length()-1)+"/workspace");
 		if(!workspace.exists()){
@@ -87,7 +79,7 @@ public class Application implements IApplication {
 		else
 			System.out.println("Workspace is already exist");
 		
-		//TreeViewRoot 항목 생성을 포함하는 txt 생성
+		//Content 항목 생성을 포함하는 txt 생성
 		Content = new File(workspace.getPath() + "/Content.txt");
 		if(!Content.exists()){
 			try {

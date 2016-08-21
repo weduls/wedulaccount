@@ -1,8 +1,11 @@
 package account;
 
 import nattable.qbview;
+
 import org.eclipse.ui.IPageLayout;
 import org.eclipse.ui.IPerspectiveFactory;
+
+import TreeViewer.catagoryView;
 
 
 public class Perspective implements IPerspectiveFactory {
