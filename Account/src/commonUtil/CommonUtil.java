@@ -1,4 +1,4 @@
-package cUtil;
+package commonUtil;
 
 public class CommonUtil {
 	public static int findCharacterIndex(String str, char character){

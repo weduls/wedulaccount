@@ -1,8 +1,9 @@
 package account;
 
-import org.eclipse.equinox.internal.app.Messages;
 import org.eclipse.osgi.util.NLS;
 
+
+//府家胶 包府 努贰胶
 public class Message extends NLS {
 	private static final String BUNDLE_NAME = "account.messages"; //$NON-NLS-1$
 	

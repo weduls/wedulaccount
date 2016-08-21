@@ -22,9 +22,10 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.ui.part.ViewPart;
 
 import account.Application;
+import account.GetTransactionInfo;
 import account.Message;
-import account.getTransactionInfo;
-import cUtil.CommonUtil;
+
+import commonUtil.CommonUtil;
 
 	/*
 	 * 왼쪽의 결재 컨텐츠를 출력하는 트리를 생성하는 클래스
@@ -86,9 +87,9 @@ public class catagoryView extends ViewPart {
 				SelectionObject = (String)CommonUtil.subStr((String)SelectionObject, 1,  SelectionObject.length());//SelectionObject.substring(1);
 				SelectionObject = (String)CommonUtil.subStr((String)SelectionObject, 0,  SelectionObject.length()-1);
 				if(SelectionObject.equals(Message.allView) || SelectionObject.equals(Message.wallet) || SelectionObject.equals(Message.bank) || SelectionObject.equals(Message.sinyoungcard))
-					getTransactionInfo.selectionHeaderView(SelectionObject);
+					GetTransactionInfo.selectionHeaderView(SelectionObject);
 				else
-					getTransactionInfo.selectionView(SelectionObject);
+					GetTransactionInfo.selectionView(SelectionObject);
 			}
 		});
 		

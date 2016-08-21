@@ -158,6 +158,6 @@ public class Application implements IApplication {
 		}else
 			System.out.println("DefaultCententList is already exist");
 		
-		getTransactionInfo.allView();		
+		GetTransactionInfo.allView();		
 	}
 }

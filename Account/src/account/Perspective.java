@@ -10,6 +10,8 @@ import TreeViewer.catagoryView;
 
 public class Perspective implements IPerspectiveFactory {
 
+	
+	//초기 화면 설정
 	public void createInitialLayout(IPageLayout layout) {
 		layout.setEditorAreaVisible(false);
 		layout.addStandaloneView(catagoryView.ID, false, IPageLayout.LEFT, 0.2f, layout.getEditorArea());

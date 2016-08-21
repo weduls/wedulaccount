@@ -37,6 +37,7 @@ public class ApplicationActionBarAdvisor extends ActionBarAdvisor {
 		register(addpurchaseCatagory);
     }
 
+    //Add Menu Context Manager
     protected void fillMenuBar(IMenuManager menuBar) {
     	MenuManager QueryBrower = new MenuManager("&파일", Message.titlefile);
     	MenuManager wedulAccount = new MenuManager("&위들 가계부", Message.titleAction);
@@ -48,6 +49,8 @@ public class ApplicationActionBarAdvisor extends ActionBarAdvisor {
     	menuBar.add(QueryBrower);
     	menuBar.add(wedulAccount);
     }
+    
+    //Add ToolBar Content
     protected void fillCoolBar(ICoolBarManager coolBar) {
 		IToolBarManager toolbar = new ToolBarManager(coolBar.getStyle());
 		coolBar.add(toolbar);

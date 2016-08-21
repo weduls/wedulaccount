@@ -3,7 +3,6 @@ package dialog;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Iterator;
-import java.util.List;
 
 import org.eclipse.jface.dialogs.Dialog;
 import org.eclipse.jface.layout.GridDataFactory;
@@ -102,7 +101,6 @@ public class addAccountCatagory extends Dialog {
 		 });
 		
 		GridDataFactory.fillDefaults().grab(true, true).applyTo(group);
-		
 		return composite;
 	}
 	
@@ -148,6 +146,7 @@ public class addAccountCatagory extends Dialog {
 		}
 	}
 	
+	//결재(트리 루트) 항목 셋팅
 	public void type_comboContents(){
 		itr = catagoryView.parent.iterator();
 		while(itr.hasNext()){
@@ -159,6 +158,7 @@ public class addAccountCatagory extends Dialog {
 		type_combo.setText("-------------------");
 	}
 	
+	//지갑 항목 UI
 	public void createWallet(Composite composite){
 		if(composite instanceof Group){
 			//label
@@ -187,7 +187,8 @@ public class addAccountCatagory extends Dialog {
 					{
 						inputText.setEditable(true);
 						inputText.setFocus();
-						
+					} else {
+						inputText.setEditable(false);
 					}
 				}
 			});
@@ -198,6 +199,7 @@ public class addAccountCatagory extends Dialog {
 		}
 	}
 	
+	// 카드 항목 UI
 	public void createCard(Composite composite){
 		if(composite instanceof Group){
 			//label
@@ -226,6 +228,8 @@ public class addAccountCatagory extends Dialog {
 					{
 						inputText.setEditable(true);
 						inputText.setFocus();
+					} else {
+						inputText.setEditable(false);
 					}
 				}
 			});
@@ -237,6 +241,7 @@ public class addAccountCatagory extends Dialog {
 		}
 	}
 	
+	// 은행 항목 UI
 	public void createBank(Composite composite){
 		if(composite instanceof Group){
 			//label
@@ -265,6 +270,8 @@ public class addAccountCatagory extends Dialog {
 					{
 						inputText.setEditable(true);
 						inputText.setFocus();
+					}else {
+						inputText.setEditable(false);
 					}
 				}
 			});
@@ -275,6 +282,7 @@ public class addAccountCatagory extends Dialog {
 		}
 	}
 	
+	//input(직접 입력) 항목 추가
 	public void createTextBox(Composite composite){
 		if(composite instanceof Group){
 			if(addContent_inputlabel != null)

@@ -7,7 +7,6 @@ import org.eclipse.ui.plugin.AbstractUIPlugin;
 import account.Application;
 import account.IImageKeys;
 import account.Message;
-import dialog.addAccountCatagory;
 
 public class addAccountContentAction extends Action {
 	private final IWorkbenchWindow window;

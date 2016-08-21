@@ -4,12 +4,12 @@ import org.eclipse.jface.action.Action;
 import org.eclipse.ui.IWorkbenchWindow;
 import org.eclipse.ui.plugin.AbstractUIPlugin;
 
-import TreeViewer.catagoryView;
 import account.Application;
 import account.IImageKeys;
 import account.Message;
 import dialog.addAccountCatagory;
 
+// Add 계좌, 카드, 내 지갑 추가 액션 
 public class AddAccountCatagoryAction extends Action {
 	private final IWorkbenchWindow window;
 
@@ -24,6 +24,6 @@ public class AddAccountCatagoryAction extends Action {
 	}
 	public void run() {
 		addAccountCatagory AddDialog = new addAccountCatagory(window.getShell());
-		int code = AddDialog.open();
+		AddDialog.open();
 	}
 }

@@ -1,5 +1,6 @@
 package account;
 
+// Image 관리 클래스
 public interface IImageKeys {
 	public static final String Allview = "icons/allview.png";
 	public static final String ChildTree = "icons/chrome.png";

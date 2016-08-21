@@ -26,12 +26,13 @@ import org.eclipse.swt.widgets.TableColumn;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.ui.plugin.AbstractUIPlugin;
 
+import commonUtil.CommonUtil;
+
 import tableViewer.ModelProvider;
 import tableViewer.TableNode;
 import account.Application;
 import account.IImageKeys;
 import account.Message;
-import cUtil.CommonUtil;
 
 public class addpurchaseCatagory extends Dialog{
 	private FileWriter fw;

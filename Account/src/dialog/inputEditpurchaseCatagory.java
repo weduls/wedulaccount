@@ -16,9 +16,10 @@ import org.eclipse.swt.widgets.MessageBox;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
 
+import commonUtil.CommonUtil;
+
 import tableViewer.ModelProvider;
 import account.Message;
-import cUtil.CommonUtil;
 
 public class inputEditpurchaseCatagory extends Dialog {
 	private Shell shell;
