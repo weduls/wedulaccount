@@ -15,17 +15,16 @@
    <launcherArgs>
    </launcherArgs>
 
-   <windowImages i16="/Account/icons/title.png" i32="/Account/icons/title32.png" i48="/Account/icons/title48.png" i64="/Account/icons/title64.png"/>
+   <windowImages i16="/Account/icons/title.bmp" i32="/Account/icons/title32.bmp" i48="/Account/icons/title48.bmp" i64="/Account/icons/title64.bmp" i128="/Account/icons/title128.bmp" i256="/Account/icons/title256.bmp"/>
 
    <launcher>
       <solaris/>
       <win useIco="true">
-         <ico path="/Account/icons/favicon.ico"/>
+         <ico path="/Account/icons/title_wedul.ico"/>
          <bmp
             winSmallLow="/Account/icons/title_launch.bmp"/>
       </win>
    </launcher>
-
 
    <vm>
    </vm>

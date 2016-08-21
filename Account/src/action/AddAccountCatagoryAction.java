@@ -4,10 +4,10 @@ import org.eclipse.jface.action.Action;
 import org.eclipse.ui.IWorkbenchWindow;
 import org.eclipse.ui.plugin.AbstractUIPlugin;
 
+import TreeViewer.catagoryView;
 import account.Application;
 import account.IImageKeys;
 import account.Message;
-import account.catagoryView;
 import dialog.addAccountCatagory;
 
 public class AddAccountCatagoryAction extends Action {

@@ -22,7 +22,7 @@
    <extension
          point="org.eclipse.ui.views">
       <view
-            class="account.catagoryView"
+            class="TreeViewer.catagoryView"
             icon="icons/view.png"
             id="AccoutBook.views.catagory"
             name="catagory"
@@ -34,10 +34,10 @@
          point="org.eclipse.core.runtime.products">
       <product
             application="Account.application"
-            name="%applicationName">
+            name="WedulAccountproduct">
          <property
                name="appName"
-               value="%applicationName">
+               value="WedulAccountproduct">
          </property>
          <property
                name="productId"
@@ -49,8 +49,12 @@
          </property> -->
          <property 
          	name="windowImages" 
-         	value="/Account/icons/title.gif,/Account/icons/title32.gif,/Account/icons/title48.gif,/Account/icons/title64.gif">
+         	value="icons/title.png,icons/title32.png,icons/title48.png,icons/title64.png">
 		  </property>
+         <property
+               name="aboutText"
+               value="welcome">
+         </property>
       </product>
    </extension>
 </plugin>

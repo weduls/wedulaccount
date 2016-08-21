@@ -20,10 +20,10 @@ import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
 
+import TreeViewer.TreeNode;
+import TreeViewer.catagoryView;
 import account.Application;
 import account.Message;
-import account.TreeNode;
-import account.catagoryView;
 
 
 public class addAccountCatagory extends Dialog {
