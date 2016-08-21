@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="account.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="RCP Perspective"
+            class="account.Perspective"
+            id="Account.perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="account.catagoryView"
+            icon="icons/view.png"
+            id="AccoutBook.views.catagory"
+            name="catagory"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="Account.application"
+            name="%applicationName">
+         <property
+               name="appName"
+               value="%applicationName">
+         </property>
+         <property
+               name="productId"
+               value="WedulAccount">
+         </property>
+         <!--<property
+               name="aboutImage"
+               value="icons/about.gif">
+         </property> -->
+         <property 
+         	name="windowImages" 
+         	value="/Account/icons/title.gif,/Account/icons/title32.gif,/Account/icons/title48.gif,/Account/icons/title64.gif">
+		  </property>
+      </product>
+   </extension>
+</plugin>

@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Account
+Bundle-SymbolicName: Account;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.ui,
+ Nattable,
+ org.eclipse.ui.intro
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: nattable
+Export-Package: account

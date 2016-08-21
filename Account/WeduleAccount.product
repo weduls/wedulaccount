@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="WedulAccountproduct" id="Account.product" application="Account.application" useFeatures="false" includeLaunchers="true">
+
+   <aboutInfo>
+      <text>
+         welcome
+      </text>
+   </aboutInfo>
+
+   <configIni use="">
+   </configIni>
+
+   <launcherArgs>
+   </launcherArgs>
+
+   <windowImages i16="/Account/icons/title.png" i32="/Account/icons/title32.png" i48="/Account/icons/title48.png" i64="/Account/icons/title64.png"/>
+
+   <launcher>
+      <solaris/>
+      <win useIco="true">
+         <ico path="/Account/icons/favicon.ico"/>
+         <bmp
+            winSmallLow="/Account/icons/title_launch.bmp"/>
+      </win>
+   </launcher>
+
+
+   <vm>
+   </vm>
+
+   <plugins>
+   </plugins>
+
+
+</product>
