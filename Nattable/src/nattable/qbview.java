@@ -52,14 +52,18 @@ import org.eclipse.ui.part.ViewPart;
 public class qbview extends ViewPart {
 	public static final String ID = "NattableTest.views.qbview";
 	public static NatTable natTable;
-	public static List<String> columns = new ArrayList<String>();
+	//public static List<String> columns = new ArrayList<String>();
 	public static List<Object> values = new ArrayList<Object>();
+	public static String[] columns = new String[] { Message.columnData, Message.columnitem,
+			Message.columnBigType, Message.columnSmallType,
+			Message.columnPrice, Message.columnCatagory,
+			Message.columnBanlance, Message.columnContent };
 
 	public qbview() {
 		// TODO Auto-generated constructor stub
 		super();
 	}
-
+	
 	public void createPartControl(final Composite parent) {
 		GridLayout gridLayout = new GridLayout();
 		gridLayout.numColumns=1;
@@ -69,8 +73,6 @@ public class qbview extends ViewPart {
 		
 		createCalendar(parent);	
 		createNattable(parent);
-				
-		
 	}
 	
 	public void createNattable(Composite parent){
@@ -204,7 +206,7 @@ public class qbview extends ViewPart {
 
 		@Override
 		public Object getDataValue(int columnIndex, int rowIndex) { // 컬럼의
-			return columns.get(columnIndex); //$NON-NLS-1$
+			return columns[columnIndex]; //$NON-NLS-1$
 		}
 
 		@Override
@@ -214,7 +216,7 @@ public class qbview extends ViewPart {
 
 		@Override
 		public int getColumnCount() { // 컬럼 사이즈를 나타내는 부분
-			return qbview.this.columns.size();
+			return columns.length;
 		}
 
 		@Override
@@ -239,17 +241,21 @@ public class qbview extends ViewPart {
 
         @Override
         public int getColumnCount() {
-            return qbview.this.columns.size();
+            return columns.length;
         }
 
         @Override
         public String getColumnProperty(int columnIndex) {
-            return (String) qbview.this.columns.get(columnIndex);
+            return (String) columns[columnIndex];
         }
 
         @Override
         public int getColumnIndex(String propertyName) {
-            return qbview.this.columns.indexOf(propertyName);
+        	for(int i = 0; i < columns.length; i++) {
+        		if (propertyName.equals(columns[i]))
+        			return i;
+        	}
+        	return 0;
         }
     }
 }
